@@ -1,0 +1,37 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "phone number",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "PhoneNumberIntent",
+          "slots": [
+            {
+              "name": "phone",
+              "type": "AMAZON.PhoneNumber"
+            }
+          ],
+          "samples": [
+            "it is {phone}",
+            "my number is {phone}",
+            "my phone number is {phone}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "2"
+}
