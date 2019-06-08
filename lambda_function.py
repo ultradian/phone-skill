@@ -33,7 +33,9 @@ class LaunchRequestHandler(AbstractRequestHandler):
                 phone = session_attr['phone']
                 reprompt = ("Tell me a different phone number, or say "
                             "stop to quit. ")
-                speech = f"I have your phone number as {phone}. " + reprompt
+                speech = ("I have your phone number as  <say-as "
+                          f"interpret-as='telephone'>{phone}</say-as>")
+                speech += reprompt
             else:
                 reprompt = "What is your phone number?"
                 speech = "Welcome back. " + reprompt
